@@ -5,15 +5,13 @@ from os import path
 import time
 
 def main():
-    print("Forandre navn på en rekke bilder. ")
-    print("Bildene blir nummerert fra gjennomgangsnummer")
-    print("Eks: 555555-1, 555555-2 osv")
+    print("Text to be printed when program starts")
 
     src_folder = os.getcwd()
     order_num = input("Skriv inn gjennomgangsnummer: ")
     license_num = input("Skriv inn bilnummer: ")
     
-    target = r"C:\Users\B851SVA\Harald A. Moller AS\Møller Bil Tønsberg - Servicemarked Verksted\Kundemottakere Tbg\Stephan\Takster"
+    target = r"target_path"
     target = target + "\\" + license_num
     target_order_num = target + "\\" + order_num
 
